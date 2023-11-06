@@ -1,0 +1,138 @@
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c2222cc;
+    backdrop-filter: blur(15px);
+    padding: 1rem;
+    color: var(--subBg400);
+    text-transform: uppercase;
+    font-family: var(--mainPop-font);
+}
+
+.header__logo {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 300;
+    font-family: var(--mainMont-font);
+}
+.header__logo a:hover {
+    color: var(--white)
+}
+.header__logo em {
+    font-size: 10px;
+    display: block;
+}
+
+.header__nav li {
+    display: inline;
+}
+
+.header__nav li a {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    font-weight: 300;
+    position: relative;
+}
+
+.header__nav li a::before {
+    content: '';
+    width: calc(100% - 30px);
+    height: 1px;
+    background-color: var(--white300);
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    transform: scaleX(0);
+    transition: all 0.3s;
+}
+.header__nav li a:hover::before {
+    transform: scaleX(1);
+    color: var(--white);
+}
+
+.header__nav li a:hover {
+    color: var(--white);
+}
+
+.header__nav__mobile {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+}
+.header__nav__mobile span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--white300);
+    margin-top: 19px;
+    position: relative;
+}
+.header__nav__mobile span::before {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: var(--white300);
+    position: absolute;
+    right: 0;
+    top: 6px;
+    transition: width 0.3s;
+}
+.header__nav__mobile span::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: var(--white300);
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    transition: width 0.3s;
+}
+
+@media (max-width: 800px){
+    .header__nav {
+        display: none;
+    }
+    .header__nav.show {
+        display: block;
+    }
+    .header__nav.show ul {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 68px;
+        background-color: #2c2222cc;
+        z-index: 10000;
+        min-width: 159px;
+        padding: 20px 0;
+    }
+    .header__nav.show li {
+        display: block;
+        text-align: right;
+    }
+    .header__nav.show li a {
+        display: inline-block;
+        padding: 10px;
+    }
+    .header__nav.show + .header__nav__mobile span::before {
+        width: 20px;
+    }
+    .header__nav.show + .header__nav__mobile span::after {
+        width: 20px;
+    }
+
+    .header__nav__mobile {
+        display: block;
+    }
+}

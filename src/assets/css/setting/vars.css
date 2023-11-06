@@ -1,0 +1,60 @@
+:root {
+    --mainKor-font: "nanumSquareNeo";
+    --mainNum-font: "gmarket";
+    --mainMont-font: "Montserrat";
+    --mainPop-font: "Poppins";
+
+    --mainBg-color: #2b2222;
+    --mainSub-color: #c1c1c1;
+    --subBg100: #ffffff;
+    --subBg200: #d9d9d9;
+    --subBg300: #c1c1c1;
+    --subBg400: #aaaaaa;
+    --subBg500: #959595;
+
+    --subBox100: #867878;
+    --subBox200: #675252;
+    --subBox300: #7b6161;
+    --subBox400: #997a7a;
+
+    --white: #ffffff;
+    --white100: #e8e8e8;
+    --white200: #dddddd;
+    --white300: #c1c1c1;
+    --white400: #b3b3b3;
+    --white500: #a4a4a4;
+
+    --black: #000000;
+    --black100: #000000;
+    --black200: #000000;
+    --black300: #000000;
+    --black400: #000000;
+    --black500: #000000;
+
+    /* 기본 폰트 설정 */
+    font-family: var(--mainEng-font), var(--mainKor-font);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* 폰트를 부드럽게 렌더링하기 위한 속성  */
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* 아이폰 가로 모드에서 글씨 확대 금지 */
+    -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+body {
+    color: var(--mainFont-color);
+    background-color: var(--mainBg-color);
+}

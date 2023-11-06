@@ -23,9 +23,12 @@ Vite는 초기 구동 속도가 빠르며, 코드 번들링을 필요할 때만 
 6. 다양한 프레임워크 지원
 비록 Evan You가 Vue.js 개발자이지만, Vite는 다른 프레임워크 및 라이브러리 (React, Svelte, 등)와도 함께 작동할 수 있습니다.
 
+## 구현 기능
+- 구글 폰트 적용
 
 ## 트러블 슈팅
 <details>
 <summary>git 업로드 버그</summary>
-권한으로 인한 업로그 버그 현상이 생김 > 해결
+권한으로 인한 업로드 버그 현상이 생김 > 해결
+git remote set-url origin https://webstoryboy@github.com/webstoryboy/vite-project2023.git
 </details>

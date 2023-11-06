@@ -1,0 +1,77 @@
+.skill__inner {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.skill__title {
+    position: sticky;
+    top: 65px;
+    left: 0;
+    width: 48%;
+    height: 4.9vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-family: var(--mainPop-font);
+    border-bottom: 0.4vw solid var(--white200);
+    color: var(--white200);
+}
+.skill__title em {
+    font-family: var(--mainKor-font);
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: 4px;
+}
+.skill__desc {
+    width: 50%;
+}
+.skill__desc span {
+    font-size: 5vw;
+    line-height: 1.5;
+    font-weight: 900;
+    font-family: var(--mainNum-font);
+    color: var(--white200);
+}
+.skill__desc h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 1vw;
+    color: var(--white200);
+}
+.skill__desc p {
+    margin-bottom: 30vh;
+    font-size: 1.1rem;
+    font-family: var(--mainKor-font);
+    color: var(--white200);
+}
+
+@media (max-width: 800px){
+    .skill__inner {
+        flex-direction: column;
+    }
+    .skill__title {
+        width: 100%;
+        margin-bottom: 10vw;
+        height: auto;
+        background-color: var(--mainBg-color);
+        font-size: 40px;
+        line-height: 1.4;
+        top: 68px;
+    }
+    .skill__desc {
+        width: 100%;
+    }
+    .skill__desc span {
+        font-size: 20vw;
+    }
+    .skill__desc h3 {
+        font-size: 24px;
+        margin-bottom: 2vw;
+    }
+    .skill__desc p {
+        font-size: 16px;
+    }
+}
