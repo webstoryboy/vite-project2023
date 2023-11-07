@@ -1,1 +1,133 @@
-port {}
+#port {
+    width: 100%;
+    overflow: hidden;
+}
+
+.port__inner {
+    padding: 16px;
+}
+
+.port__title {
+    position: sticky;
+    top: 70px;
+    left: 0;
+    width: 70%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    color: var(--white200);
+    border-bottom: 0.4vw solid var(--white200);
+    margin-bottom: 100px;
+}
+
+.port__title em {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.port__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 7000px;
+}
+
+.port__item {
+    width: 500px;
+    height: 70vh;
+    background-color: var(--white200);
+    margin-right: 20px;
+    padding: 2.5rem;
+}
+
+.port__item .num {
+    font-size: 2rem;
+    font-family: var(--mainNum-font);
+}
+
+.port__item .img {
+    display: block;
+    margin-top: -20px;
+    transition: margin-top 0.3s;
+}
+
+.port__item:hover .img {
+    margin-top: 0;
+}
+
+.port__item .img img {
+    border-radius: 5px;
+    filter: saturate(0%);
+    transition: all 0.3s;
+}
+
+.port__item .img:hover img {
+    filter: saturate(100%)
+}
+
+.port__item .title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-weight: 700;
+    color: var(--black100);
+    border-bottom: 2px solid var(--black100);
+    margin-bottom: 1rem;
+    font-family: var(--mainKor-font);
+}
+
+.port__item .desc {
+    font-size: 1rem;
+    font-family: var(--mainKor-font);
+}
+
+.port__item .site {
+    border: 1px solid var(--black100);
+    display: block;
+    text-align: center;
+    padding: 0.625rem 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.port__item.p1 {
+    background-color: var(--subBg100);
+}
+
+.port__item.p2 {
+    background-color: var(--subBg500);
+}
+
+.port__item.p3 {
+    background-color: var(--subBg200);
+}
+
+.port__item.p4 {
+    background-color: var(--subBg400);
+}
+
+.port__item.p5 {
+    background-color: var(--subBg500);
+}
+
+.port__item.p6 {
+    background-color: var(--subBg100);
+}
+
+.port__item.p7 {
+    background-color: var(--subBg500);
+}
+
+.port__item.p8 {
+    background-color: var(--subBg300);
+}
+
+.port__item.p9 {
+    background-color: var(--subBg200);
+}
+
+.port__item.p10 {
+    background-color: var(--subBg500);
+}
